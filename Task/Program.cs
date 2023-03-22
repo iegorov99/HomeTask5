@@ -33,9 +33,16 @@ int SumOfOddIndecies(int[] array)
     return sum;
 }
 
+try
+{
 int length = Enter("Введите длину массива: ");
 int min = Enter("Введите минимальное число массива: ");
 int max = Enter("Введите максимальное число массива: ");
 int[] arr = Array(length, min, max);
 PrintArray(arr);
 Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях равна {SumOfOddIndecies(arr)}");
+}
+catch
+{
+    Console.WriteLine("Введено некорректное значение");
+}
