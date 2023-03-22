@@ -101,6 +101,8 @@ double Median(int[] array)
     return result;
 }
 
+try
+{
 int length = Enter("Ввдеите длину массива: ");
 int min = Enter("Введите минимально возможное значение для элементов массива: ");
 int max = Enter("Введите максимально возможное значение для элементов массива: ");
@@ -110,3 +112,8 @@ ArraySecond(Max(arr), Min(arr), Average(arr));
 int[] sort = Sort(arr);
 PrintArray(sort);
 Console.WriteLine($"Медианное значение первоначального массива {Median(sort)}");
+}
+catch
+{
+    Console.WriteLine("Введено некорректное значение");
+}
